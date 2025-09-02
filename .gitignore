@@ -218,3 +218,4 @@ __marimo__/
 
 models/*
 !models/.gitkeep
+.vscode/settings.json
