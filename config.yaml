@@ -1,0 +1,29 @@
+stt:
+  engine: vosk
+  model_path: models/vosk-model-small-en-us-0.15
+
+parser:
+  engine: regex
+
+dispatcher:
+  engine: mock  # Options: mock, voice_attack, autohotkey, lua_socket
+  # engine: lua_socket
+  # lua_socket:
+  #   host: "127.0.0.1"
+  #   port: 8765
+  #   connect_timeout: 5.0
+  #   send_timeout: 5.0
+
+commands:
+  launch:
+    patterns:
+      - take off
+      - launch
+  land:
+    patterns:
+      - land
+      - touch down
+  boost:
+    patterns:
+      - boost
+      - go faster
